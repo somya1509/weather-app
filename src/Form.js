@@ -5,7 +5,7 @@ const Form = (props) => {
   return (
     <div className="weather_app">
       <form onSubmit={props.getWeather}>
-        <input type="text" placeholder="Enter your city name" name="city" />
+        <input type="text" className="name_input" placeholder="Enter your city name" name="city" />
         <input type="text" placeholder="Enter country" name="country" />
         <input type="submit" />
       </form>

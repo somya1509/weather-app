@@ -19,10 +19,13 @@ function App() {
     if (city && country) {
       setWeather({
         data: apiData,
-        city: apiData.city,
+        city: apiData.name,
         country: apiData.sys.country,
         description: apiData.weather[0].description,
         temp: Math.round(apiData.main.temp - 273.15),
+        humidity: apiData.main.humidity,
+        pressure: apiData.main.pressure,
+        wind: apiData.wind.speed,
         error: "",
       });
     } else {
