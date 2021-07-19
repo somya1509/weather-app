@@ -44,7 +44,6 @@ function App() {
       <h1> Weather App</h1>
       <Form getWeather={fetchData} />
       <Weather {...weather} />
-      {console.log(weather.data)}
     </div>
   );
 }

@@ -7,7 +7,7 @@ const Weather = ({ description, city, country, error, temp, humidity,pressure,wi
 
     if (description) {
       const weatherDesc = description.split(" ");
-      const keywords = ["cloudy", "clouds", "cloud", "overcast", "mist"];
+      const keywords = ["cloudy", "clouds", "cloud", "overcast"];
       const arrayfiltered = keywords.some((ele) => weatherDesc.includes(ele));
       if (arrayfiltered) {
         return <TiWeatherCloudy size="50" />;
